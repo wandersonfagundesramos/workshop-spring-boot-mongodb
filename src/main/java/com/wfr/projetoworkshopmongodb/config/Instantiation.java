@@ -2,7 +2,6 @@ package com.wfr.projetoworkshopmongodb.config;
 
 import java.util.Arrays;
 
-import org.apache.catalina.realm.X509UsernameRetriever;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Configuration;
@@ -26,6 +25,5 @@ public class Instantiation implements CommandLineRunner {
 		User bob = new User(null, "Bob Grey", "bob@gmail.com");
 		
 		userRepository.saveAll(Arrays.asList(maria, alex, bob));
-		
 	}
 }
